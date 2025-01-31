@@ -175,7 +175,9 @@ nav > ul > li:hover > ul > li:hover{
     padding: 5px;;
 }
 
-.box form input [type="text"],
+.box form input[type="text"],
+.box form input[type="email"],
+.box form input[type="password"],
 .box form textarea,
 .box form select{
     width: 100%;
@@ -210,7 +212,8 @@ nav > ul > li:hover > ul > li:hover{
     color: red;
 }
 
-.message {
+.message,
+.alert-success {
     color: green;
     padding: 20px;
     margin-bottom: 20px;
