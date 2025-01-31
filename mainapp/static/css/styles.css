@@ -213,10 +213,15 @@ nav > ul > li:hover > ul > li:hover{
 }
 
 .message,
-.alert-success {
+.alert-success,
+.alert {
     color: green;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.alert-warning {
+    color: red;
 }
 
 .title{

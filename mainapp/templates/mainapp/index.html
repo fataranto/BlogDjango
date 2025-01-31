@@ -8,11 +8,19 @@
     <h1>{{ title }} </h1>
 
     {% if messages %}
-        {% for message% in messages %}
+        {% for message in messages %}
             <div class='alert alert-success'>
                 {{ message }}
             </div>
         {% endfor %}
     {% endif %}
+
+
+    {% if user.username %}
+        <h2>Bienvenido, {{ request.user.first_name }}</h2>
+    {% else %}
+        <h2> Bienvenido, identifícate para ver más cosas</h2>
+    {% endif %}
+
     
 {% endblock %}
